@@ -1,0 +1,55 @@
+/* Styling for Cafe Gardenia */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background-color: #fcfdfc; color: #2d3436; }
+
+/* Colors: Nature Green (#1b4332), Accent Gold (#d4af37) */
+
+nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 8%; background: #1b4332; position: sticky; top: 0; z-index: 100;
+}
+.logo { font-family: 'Playfair Display', serif; font-size: 28px; color: #d4af37; font-weight: bold; }
+nav ul { display: flex; list-style: none; }
+nav ul li a { color: white; text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+nav ul li a:hover { color: #d4af37; }
+.zomato-nav { background: #e23744; padding: 7px 15px; border-radius: 4px; }
+
+header {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover; background-position: center;
+    display: flex; justify-content: center; align-items: center; text-align: center; color: white;
+}
+.hero-content h1 { font-family: 'Playfair Display', serif; font-size: 60px; color: #d4af37; }
+.hero-content p { font-size: 20px; letter-spacing: 2px; margin-bottom: 25px; }
+
+.btn { background: #d4af37; color: #1b4332; padding: 12px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; }
+.btn-outline { border: 2px solid #d4af37; color: white; padding: 10px 28px; text-decoration: none; border-radius: 30px; margin-left: 10px; }
+
+#menu { padding: 80px 8%; background: #fff; }
+.section-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 40px; color: #1b4332; margin-bottom: 50px; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+.menu-card { background: #f9fdfc; padding: 25px; border-radius: 15px; border-left: 5px solid #d4af37; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.menu-item { margin-bottom: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; }
+.menu-item span { font-weight: 600; color: #1b4332; }
+.menu-item p { font-size: 13px; color: #636e72; width: 100%; margin-top: 5px; }
+.price { color: #2d3436; font-weight: bold; }
+
+.zomato-box { text-align: center; margin-top: 50px; }
+.zomato-full-btn { background: #e23744; color: white; padding: 15px 40px; text-decoration: none; border-radius: 8px; font-weight: 600; }
+
+.services { padding: 60px 8%; background: #f1f8f5; }
+.service-content { display: flex; align-items: center; gap: 50px; margin-bottom: 60px; }
+.service-content.reverse { flex-direction: row-reverse; }
+.service-image img { width: 100%; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.service-text { flex: 1; }
+.service-text h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: #1b4332; margin-bottom: 15px; }
+
+footer { background: #1b4332; color: white; padding: 50px 8% 20px; }
+.footer-grid { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 30px; }
+.footer-bottom { text-align: center; padding-top: 20px; font-size: 14px; opacity: 0.7; }
+
+@media (max-width: 768px) {
+    .service-content, .service-content.reverse { flex-direction: column; text-align: center; }
+    .hero-content h1 { font-size: 40px; }
+}
